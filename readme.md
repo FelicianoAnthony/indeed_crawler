@@ -28,11 +28,12 @@ how to use this thing & what it is:
     > scrapy crawl indeed -t csv -o file.csv
 
 
-5) filter jobs crawled by date and by word(s) in job title, remove duplicates, & check against database 
+5) filter job urls that were crawled by date and by word(s) in job title, remove duplicates, check against database, & show urls 
+   in a new tab in the same chromedriver window 
     > cd ./indeed_crawler
 
     > python3 db_and_selenium_urls.py
 
     > need webdriver path (e.g. /Users/Anthony/Desktop/chromedriver)
-    
+
     > need sqlite DB path (e.g. /Users/Anthony/Desktop/python_projects/databases/test_db.sqlite)
